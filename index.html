@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2>
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias eum ad
+      nam facilis ducimus necessitatibus vero ut modi saepe blanditiis ipsa unde
+      culpa, fugit itaque placeat atque illo! Nobis expedita cumque, quisquam
+      veniam eius vero, quas omnis quibusdam aliquid, est laboriosam! Corporis
+      expedita culpa animi omnis hic magnam? Autem, quae.
+    </h2>
+
+    <script>
+      const samiat = document.querySelector("h2");
+      const aramide = document.querySelector("body");
+
+      function truncate(num) {
+        const para = document.createElement("p");
+        const span = document.createElement("span");
+
+        aramide.append(para);
+        para.append(span);
+
+        para.style.color = "orange";
+        str = samiat.innerText;
+        str = str.slice(0, num);
+
+        const dami = "....read more";
+        return (span.textContent = str.concat(dami));
+      }
+      truncate(40);
+    </script>
+  </body>
+</html>
